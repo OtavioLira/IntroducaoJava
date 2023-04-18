@@ -17,5 +17,7 @@ public class MaisUmPrograma {
 		System.out.println(" Cargo: CTO");
 		System.out.println(" Salario: R$10.000");
 		System.out.println("========================================================");
+		
+		entrada.close();
 	}
 }

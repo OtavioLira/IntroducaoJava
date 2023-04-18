@@ -1,7 +1,5 @@
 package logica.aulas;
 
-import java.util.Scanner;
-
 public class OutroPrograma {
 
 	public static void main(String[] args) {
