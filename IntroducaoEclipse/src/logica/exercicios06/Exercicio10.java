@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class Exercicio10 {
 
 	public static void main(String[] args) {
-
+		
 		double salario = Float.parseFloat(JOptionPane.showInputDialog(null,"Digite o salario do colaborador: ","Reajuste", 1));
 		double percentual,novoSalario,aumento;
 		

@@ -11,9 +11,9 @@ public class Exercicios11 {
 		int dias = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade (dias): "));
 		
 		anos = anos / 365;
-		anos %= 365;
 		meses = meses / 30;
-		meses %= meses;
+		
+		dias = dias + meses + anos;
 		
 		JOptionPane.showMessageDialog(null, String.format("Total de dias vividos: %d"
 				+ "\nMeses: %d"

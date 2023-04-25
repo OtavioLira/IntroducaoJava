@@ -6,18 +6,30 @@ public class Exercicio12 {
 
 	public static void main(String[] args) {
 		
-		float distancia = Float.parseFloat(JOptionPane.showInputDialog(null,"Digite a distancia percorrida","Consumo do Combustivel",3));
-		float combustivel = Float.parseFloat(JOptionPane.showInputDialog(null,"Digite o total de combustivel gasto","Consumo do Combustivel",3));
+		float valorA = Float.parseFloat(JOptionPane.showInputDialog(null, "Lado A: ","Tipo de triângulo",-1));
+		float valorB = Float.parseFloat(JOptionPane.showInputDialog(null, "Lado B: ","Tipo de triângulo",-1));
+		float valorC = Float.parseFloat(JOptionPane.showInputDialog(null, "Lado A: ","Tipo de triângulo",-1));
 		
-		float kmLitro = distancia / combustivel;
-		
-		if(kmLitro < 8) {
-			JOptionPane.showMessageDialog(null,"“Esse carro bebe hein!”","Consumo do Combustivel",2);			
+		if(valorA >= valorB + valorC) {
+			JOptionPane.showMessageDialog(null, "Não apresenta triângulo", "Tipo de triângulo",2);
 		} else {
-			JOptionPane.showMessageDialog(null,"Autonomia legal","Consumo do Combustivel",4);
+			if(valorA*valorA == valorB*valorB + valorC*valorC) { //math.pow(valor,pontecia)
+				JOptionPane.showMessageDialog(null, "TRIANGULO RETANGULO", "Tipo de triângulo",-1);
+			}
+			if(valorA*valorA > valorB*valorB + valorC*valorC) {
+				JOptionPane.showMessageDialog(null, "TRIANGULO OBTUSANGULO", "Tipo de triângulo",-1);
+			}
+			if(valorA*valorA < valorB*valorB + valorC*valorC) {
+				JOptionPane.showMessageDialog(null, "TRIANGULO ACUTANGULO", "Tipo de triângulo",-1);
+			}
+			if(valorA == valorB && valorA == valorC) {
+				JOptionPane.showMessageDialog(null, "TRIANGULO EQUILATERO;", "Tipo de triângulo",-1);
+			}
+			if(valorA == valorB || valorA == valorC || valorB == valorC) {
+				JOptionPane.showMessageDialog(null, "TRIANGULO ISOSCELES;;", "Tipo de triângulo",-1);
+			}
 		}
 		
-	
 	}
 
 }

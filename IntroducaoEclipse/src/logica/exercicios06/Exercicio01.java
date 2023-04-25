@@ -2,7 +2,7 @@ package logica.exercicios06;
 
 import javax.swing.JOptionPane;
 
-public class Exercicio1 {
+public class Exercicio01 {
 
 	public static void main(String[] args) {
 		
