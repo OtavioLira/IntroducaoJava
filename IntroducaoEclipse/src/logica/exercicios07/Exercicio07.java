@@ -13,7 +13,7 @@ public class Exercicio07 {
 		
 		double nota;
 		int qtdMaior = 0, qtdMenor = 0;
-		
+
 		for(int i = 0; i <= 20; i++) {
 			System.out.printf("Nota do %d° aluno: ", i);
 			nota = entrada.nextDouble();

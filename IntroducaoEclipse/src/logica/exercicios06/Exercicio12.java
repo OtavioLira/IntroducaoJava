@@ -10,6 +10,23 @@ public class Exercicio12 {
 		float valorB = Float.parseFloat(JOptionPane.showInputDialog(null, "Lado B: ","Tipo de triângulo",-1));
 		float valorC = Float.parseFloat(JOptionPane.showInputDialog(null, "Lado A: ","Tipo de triângulo",-1));
 		
+		//lado maior; trocar de posição
+		if(valorA < valorB) { 
+			float aux = valorA;
+			valorA = valorB;
+			valorB = aux;
+		} 
+		if (valorA < valorC) {
+			float aux = valorA;
+			valorA = valorC;
+			valorC = aux;
+		} 
+		if(valorB < valorC) {
+			float aux = valorB;
+			valorB = valorC;
+			valorC = aux;
+		}
+		//Descobrir tipo do triângulo
 		if(valorA >= valorB + valorC) {
 			JOptionPane.showMessageDialog(null, "Não apresenta triângulo", "Tipo de triângulo",2);
 		} else {

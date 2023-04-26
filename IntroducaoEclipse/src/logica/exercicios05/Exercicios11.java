@@ -6,22 +6,14 @@ public class Exercicios11 {
 
 	public static void main(String[] args) {
 		
-		int anos = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade (anos): "));
-		int meses = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade (meses): "));
-		int dias = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade (dias): "));
+		int diasV = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade em dias: "));
+
+		int anos = (int) diasV / 365;
+		int meses = (int) diasV / 30;
 		
-		anos = anos / 365;
-		meses = meses / 30;
-		
-		dias = dias + meses + anos;
-		
-		JOptionPane.showMessageDialog(null, String.format("Total de dias vividos: %d"
-				+ "\nMeses: %d"
-				+ "\nAnos: %d", dias, meses, anos));
-		
+		System.out.printf("Anos: %d\nMeses: %d\nDias: %d",anos, meses, diasV);
 	
-	
-	
+		
 	}
 
 }
