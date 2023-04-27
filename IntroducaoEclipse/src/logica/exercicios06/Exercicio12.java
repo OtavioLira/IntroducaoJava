@@ -39,10 +39,10 @@ public class Exercicio12 {
 			if(valorA*valorA < valorB*valorB + valorC*valorC) {
 				JOptionPane.showMessageDialog(null, "TRIANGULO ACUTANGULO", "Tipo de triângulo",-1);
 			}
-			if(valorA == valorB && valorA == valorC) {
+			if(valorA == valorB && valorB == valorC) {
 				JOptionPane.showMessageDialog(null, "TRIANGULO EQUILATERO;", "Tipo de triângulo",-1);
 			}
-			if(valorA == valorB || valorA == valorC || valorB == valorC) {
+			if((valorA == valorB && valorC != valorA) || (valorB == valorC && valorB != valorA)) {
 				JOptionPane.showMessageDialog(null, "TRIANGULO ISOSCELES;;", "Tipo de triângulo",-1);
 			}
 		}

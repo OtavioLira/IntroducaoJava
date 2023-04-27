@@ -9,9 +9,14 @@ public class Exercicios11 {
 		int diasV = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade em dias: "));
 
 		int anos = (int) diasV / 365;
-		int meses = (int) diasV / 30;
 		
-		System.out.printf("Anos: %d\nMeses: %d\nDias: %d",anos, meses, diasV);
+		int restoDias = diasV % 365;
+		
+		int meses = (int) restoDias / 30;
+		
+		int dias = (int) restoDias % 30;
+		
+		System.out.printf("Anos: %d\nMeses: %d\nDias: %d", anos, meses, dias);
 	
 		
 	}
