@@ -14,11 +14,12 @@ public class Exercicio08 {
 		
 		//preencher um vetor de n tamanho com n valores
 		String[] vetor = new String[num];
+		
 		for(int i = 0; i <= vetor.length-1; i++) {
-			System.out.print("\nDigite qualquer coisa: ");
+			System.out.print("Digite qualquer coisa: ");
 			vetor[i] = entrada.nextLine();
 		}
-		//inveter vetor
+		//inverter vetor
 		for(int c = 0; c <= vetor.length-1; c++) {
 			for(int f = vetor.length-1; f >= 0; f--) {
 				String aux = vetor[c];
