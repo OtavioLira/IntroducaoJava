@@ -37,7 +37,7 @@ public class Exercicio05 {
 		int num = entrada.nextInt();
 
 		System.out.print("Temperatura (C)elsius,(F)fahrenheint,(K)elvin: ");
-		String t = entrada.nextLine().toLowerCase();
+		//String t = entrada.nextLine().toLowerCase();
 	}
 
 }
