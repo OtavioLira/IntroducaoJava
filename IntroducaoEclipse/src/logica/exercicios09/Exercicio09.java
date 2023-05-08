@@ -2,7 +2,7 @@ package logica.exercicios09;
 
 import java.util.Random;
 
-public class Exercicios09 {
+public class Exercicio09 {
 
 	public static void main(String[] args) {
 		int[][] matriz = new int[3][4];
